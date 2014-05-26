@@ -6,6 +6,12 @@ public class Agencia {
     private int numero;
     private Banco banco;
     private List<ContaIF> contas = new ArrayList<ContaIF>();
+    private List<Cliente> clientes = new ArrayList<Cliente>();
+    
+    public void cadastrarCliente(Cliente cliente){
+    	clientes.add(cliente);
+    }
+    
 
     public void cadastrarConta(ContaIF conta) {
         contas.add(conta);
